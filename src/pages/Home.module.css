@@ -1,0 +1,24 @@
+/* Full-page background */
+.pageBackground {
+  
+    position: absolute; /* Change from fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh; /* Allow scrolling */
+    background: url("../assets/comp.jpg") center/cover no-repeat;
+}
+  
+  
+  /* Text box with semi-transparent black background */
+  .textBox {
+    background: rgba(0, 0, 0, 0.8); /* Half-transparent black */
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
