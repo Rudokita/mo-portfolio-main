@@ -2,6 +2,7 @@ import React from "react";
 import vegImage from "../assets/code.png"; // Background image
 import dishDelightPDF from "../assets/dishdelight.pdf"; // Import DishDelight PDF
 import trueskovPDF from "../assets/trueskov.pdf"; // Import Trueskov PDF
+import boardgamePDF from "../assets/boardgame.pdf";
 
 const About = () => {
   return (
@@ -75,6 +76,11 @@ const About = () => {
               View Trueskov PDF
             </a>
           </p>
+          <p>
+            <a href={boardgamePDF} target="_blank" rel="noopener noreferrer">
+              View boardgame PDF
+            </a>
+          </p>
         </div>
 
         {/* Side-by-Side PDF Previews */}
@@ -104,6 +110,16 @@ const About = () => {
             <h3 style={{ color: "black" }}>Preview: Trueskov PDF</h3>
             <iframe
               src={trueskovPDF}
+              width="100%"
+              height="400px"
+              style={{ border: "none" }}
+            ></iframe>
+          </div>
+          {/* boardgame PDF */}
+          <div style={{ flex: "1 1 45%", minWidth: "300px" }}>
+            <h3 style={{ color: "black" }}>Preview: boardgame PDF</h3>
+            <iframe
+              src={boardgamePDF}
               width="100%"
               height="400px"
               style={{ border: "none" }}
